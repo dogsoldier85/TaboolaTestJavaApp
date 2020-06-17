@@ -24,9 +24,7 @@ public class Result<T> {
     @Override
     public boolean equals(@Nullable Object obj) {
         if (obj instanceof Result<?>) {
-            if (((Result<?>) obj).getData().equals(data) && ((Result<?>) obj).getException() == exception) {
-                return true;
-            }
+            return ((Result<?>) obj).getData().equals(data) && ((Result<?>) obj).getException() == exception;
         }
         return false;
     }

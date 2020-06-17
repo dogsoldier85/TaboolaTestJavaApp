@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.DiffUtil;
 import com.slava.taboolatestjava.articles.entities.IBaseDataModel;
 
 import java.util.List;
+import java.util.Objects;
 
 public class ArticlesDiffUtilCallBack extends DiffUtil.Callback {
 
@@ -34,10 +35,11 @@ public class ArticlesDiffUtilCallBack extends DiffUtil.Callback {
 
     @Override
     public boolean areContentsTheSame(int oldItemPosition, int newItemPosition) {
-        if (!mOldList.get(oldItemPosition).getName().equals(mNewList.get(newItemPosition).getName())) {
+        if (!Objects.equals(mOldList.get(oldItemPosition).getName(), mNewList.get(newItemPosition).getName())) {
             return false;
-        } else if (!mOldList.get(oldItemPosition).getDescription().equals(mNewList.get(newItemPosition).getDescription())) {
+        } else if (!Objects.equals(mOldList.get(oldItemPosition).getDescription(), mNewList.get(newItemPosition).getDescription())) {
             return false;
-        } else return mOldList.get(oldItemPosition).getThumbnail().equals(mNewList.get(newItemPosition).getThumbnail());
+        } else
+            return Objects.equals(mOldList.get(oldItemPosition).getThumbnail(), mNewList.get(newItemPosition).getThumbnail());
     }
 }
