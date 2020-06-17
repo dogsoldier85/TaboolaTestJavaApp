@@ -7,8 +7,9 @@
   <component name="ChangeListManager">
     <list default="true" id="853a71d7-fd64-4b74-ab0b-fedc5f04e62c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/slava/taboolatestjava/articles/adapter/ArticlesDiffUtilCallBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/slava/taboolatestjava/articles/adapter/ArticlesDiffUtilCallBack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/slava/taboolatestjava/entities/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/slava/taboolatestjava/entities/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/slava/taboolatestjava/persistence/ArticlesDataBaseImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/slava/taboolatestjava/persistence/ArticlesDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/slava/taboolatestjava/persistence/ArticlesDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/slava/taboolatestjava/repositories/ArticlesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/slava/taboolatestjava/repositories/ArticlesRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,22 +126,34 @@
       <option name="project" value="LOCAL" />
       <updated>1592415822759</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="avoid null pointer on equals strings">
+      <created>1592417452473</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592417452473</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="avoid null pointer on equals strings" />
+    <option name="LAST_COMMIT_MESSAGE" value="avoid null pointer on equals strings" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="432" y="96" key="CommitChangelistDialog2" timestamp="1592415822383">
+    <state x="432" y="96" key="CommitChangelistDialog2" timestamp="1592417452272">
       <screen x="0" y="23" width="1680" height="941" />
     </state>
-    <state x="432" y="96" key="CommitChangelistDialog2/0.23.1680.941@0.23.1680.941" timestamp="1592415822383" />
-    <state x="440" y="233" key="Vcs.Push.Dialog.v2" timestamp="1592415824637">
+    <state x="432" y="96" key="CommitChangelistDialog2/0.23.1680.941@0.23.1680.941" timestamp="1592417452272" />
+    <state x="141" y="106" key="DiffContextDialog" timestamp="1592417425059">
       <screen x="0" y="23" width="1680" height="941" />
     </state>
-    <state x="440" y="233" key="Vcs.Push.Dialog.v2/0.23.1680.941@0.23.1680.941" timestamp="1592415824637" />
+    <state x="141" y="106" key="DiffContextDialog/0.23.1680.941@0.23.1680.941" timestamp="1592417425059" />
+    <state x="440" y="233" key="Vcs.Push.Dialog.v2" timestamp="1592417453794">
+      <screen x="0" y="23" width="1680" height="941" />
+    </state>
+    <state x="440" y="233" key="Vcs.Push.Dialog.v2/0.23.1680.941@0.23.1680.941" timestamp="1592417453794" />
     <state x="492" y="250" width="749" height="486" key="find.popup" timestamp="1592417296917">
       <screen x="0" y="23" width="1680" height="941" />
     </state>

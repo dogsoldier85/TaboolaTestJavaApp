@@ -5,7 +5,6 @@ import com.slava.taboolatestjava.network.INetworkHandler;
 import com.slava.taboolatestjava.network.entities.ArticleServerModel;
 import com.slava.taboolatestjava.persistence.ArticleDBEntity;
 import com.slava.taboolatestjava.persistence.ArticlesDao;
-import com.slava.taboolatestjava.persistence.ArticlesDatabase;
 
 import java.util.List;
 
@@ -31,7 +30,7 @@ public class ArticlesRepository implements IArticlesRepository {
     public Observable<Result<List<ArticleDBEntity>>> getData() {
         return Observable.create(new ObservableOnSubscribe<Result<List<ArticleDBEntity>>>() {
             @Override
-            public void subscribe(ObservableEmitter<Result<List<ArticleDBEntity>>> emitter) throws Exception {
+            public void subscribe(ObservableEmitter<Result<List<ArticleDBEntity>>> emitter) {
                 emitter.onNext(new Result<>(mArticlesDao.loadAllArticles(), null));
                 Result<List<ArticleServerModel>> networkResponse = mNetworkHandler.getData();
                 if (networkResponse.getException() == null) {
