@@ -1,0 +1,2 @@
+rootProject.name='TaboolaTestJava'
+include ':app'
